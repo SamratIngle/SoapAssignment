@@ -66,13 +66,7 @@ public class Calculator
         return super.getPort(new QName("http://tempuri.org/", "CalculatorSoap"), CalculatorSoap.class);
     }
 
-    /**
-     * 
-     * @param features
-     *     A list of {@link javax.xml.ws.WebServiceFeature} to configure on the proxy.  Supported features not in the <code>features</code> parameter will have their default values.
-     * @return
-     *     returns CalculatorSoap
-     */
+    
     @WebEndpoint(name = "CalculatorSoap")
     public CalculatorSoap getCalculatorSoap(WebServiceFeature... features) {
         return super.getPort(new QName("http://tempuri.org/", "CalculatorSoap"), CalculatorSoap.class, features);
